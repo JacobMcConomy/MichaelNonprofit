@@ -2,9 +2,17 @@ import React from 'react';
 
 import config from '../config/index.json';
 
+type Section = {
+  name: string;
+  href: string;
+};
+
 const About = () => {
-  const { company, about } = config;
-  const { socialMedia, sections } = about;
+  const { about } = config;
+  const { socialMedia, sections } = about as {
+    socialMedia: typeof about.socialMedia;
+    sections: Section[];
+  };
 
   return (
     <div

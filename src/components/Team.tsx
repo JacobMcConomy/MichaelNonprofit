@@ -5,7 +5,7 @@ import Divider from "./Divider";
 
 const Team = () => {
   const { team } = config;
-  const [firstItem, secondItem] = team.items;
+  const [firstItem] = team.items;
 
   return (
     <section className={`bg-background py-8`} id="team">
