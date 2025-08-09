@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import About from '../components/About';
-import Analytics from '../components/Analytics';
-import Canvas from '../components/Canvas';
-import Features from '../components/Features';
-import Header from '../components/Header';
-import LazyShow from '../components/LazyShow';
-import MainHero from '../components/MainHero';
-import MainHeroImage from '../components/MainHeroImage';
-import Pricing from '../components/Pricing';
-import Product from '../components/Product';
+import About from "../components/About";
+import Analytics from "../components/Analytics";
+import Canvas from "../components/Canvas";
+import Team from "../components/Team";
+import Header from "../components/Header";
+import LazyShow from "../components/LazyShow";
+import MainHero from "../components/MainHero";
+import MainHeroImage from "../components/MainHeroImage";
+import Product from "../components/Product";
 
 const App = () => {
   return (
@@ -19,6 +18,10 @@ const App = () => {
           <div
             className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
           >
+            <link
+              href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+              rel="stylesheet"
+            ></link>
             <Header />
             <MainHero />
           </div>
@@ -34,16 +37,12 @@ const App = () => {
       </LazyShow>
       <LazyShow>
         <>
-          <Features />
+          <Team />
           <Canvas />
         </>
       </LazyShow>
       <LazyShow>
-        <Pricing />
-      </LazyShow>
-      <LazyShow>
         <>
-          <Canvas />
           <About />
         </>
       </LazyShow>
