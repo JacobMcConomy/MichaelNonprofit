@@ -40,16 +40,18 @@ const Team = () => {
         <div className={`flex flex-col`}>
           <div className={`w-full sm:w-1/2 p-6`}>
             <div className="flex flex-row gap-4">
-              <img
-                className="h-3/6"
-                src={firstItem?.img1}
-                alt={firstItem?.title}
-              />
-              <img
-                className="h-3/6"
-                src={firstItem?.img2}
-                alt={firstItem?.title}
-              />
+              <div className="flex flex-row flex-wrap gap-4 sm:flex-nowrap">
+                <img
+                  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
+                  src={firstItem?.img1}
+                  alt={firstItem?.title}
+                />
+                <img
+                  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
+                  src={firstItem?.img2}
+                  alt={firstItem?.title}
+                />
+              </div>
             </div>
           </div>
         </div>
