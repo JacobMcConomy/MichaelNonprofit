@@ -58,5 +58,22 @@
     "socialMedia": {
       "instagram": "https://www.instagram.com/theworldneedsusnowde/"
     }
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "What We Offer",
+    "description": "Discover the key features that make our platform stand out.",
+    "items": [
+      {
+        "name": "Feature 1",
+        "icon": "/assets/images/feature1.png",
+        "description": "Description of feature 1."
+      },
+      {
+        "name": "Feature 2",
+        "icon": "/assets/images/feature2.png",
+        "description": "Description of feature 2."
+      }
+    ]
   }
 }

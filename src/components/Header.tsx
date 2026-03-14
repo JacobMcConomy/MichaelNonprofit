@@ -61,8 +61,7 @@ const Menu = () => {
               <a
                 href="#"
                 className={`font-medium text-primary hover:text-secondary`}
-              >
-              </a>
+              ></a>
             </div>
           </nav>
         </div>
