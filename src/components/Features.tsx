@@ -1,9 +1,7 @@
-import React from 'react';
-
 import config from '../config/index.json';
 
 const Features = () => {
-  const { features } = config;
+  const { features  } = config;
   const { title, subtitle, description, items: featuresList } = features;
   return (
     <div className={`py-12 bg-background`} id="features">
